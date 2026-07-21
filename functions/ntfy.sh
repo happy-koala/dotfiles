@@ -66,7 +66,8 @@ EOF
         tag="${tag:-tada}"
     fi
 
-    curl -H "Title: $title" \
+    curl -s -o /dev/null \
+         -H "Title: $title" \
          -H "Tags: $tag" \
          -d "$message" \
          "$url"
