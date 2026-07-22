@@ -44,6 +44,28 @@ If `blink1` is not available or no compatible device is connected, `pong` contin
 
 
 
+### `pom`
+
+A small Pomodoro timer for the command line.
+
+`pom` runs a Pomodoro timer with predefined intervals for focused work and breaks. The default intervals can be used directly, or custom durations can be provided as arguments when needed.
+
+When an interval ends, `pom` uses `pong` for an audible and optional visual notification and `ntfy` to send a remote notification.
+
+```bash id="4d9s7c"
+pom
+```
+
+The timer can also be started with custom intervals:
+
+```bash id="x7h2pn"
+pom <work-seconds> <short-break-seconds> <long-break-seconds>
+```
+
+Useful when you want a Pomodoro timer without installing another app.
+
+
+
 ### `ntfy`
 
 Sends a notification via [ntfy.sh](https://ntfy.sh/). 
